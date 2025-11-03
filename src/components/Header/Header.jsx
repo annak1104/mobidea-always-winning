@@ -123,7 +123,7 @@ export const Header = () => {
             className="mt-[250px] w-[160px] md:w-[300px]"
           />
 
-          <p className="font-lato font-semibold text-xl mt-12 md:mt-24 text-white text-center">
+          <p className="font-lato px-2.5 font-semibold text-xl mt-12 md:mt-24 text-white text-center">
             [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101 Club ]
           </p>
         </div>
