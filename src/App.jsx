@@ -5,7 +5,7 @@ import EventLayout from "./components/EventLayout/EventLayout.jsx";
 import EventSection from "./components/EventSection/EventSection.jsx";
 import FAQSection from "./components/FAQSection/FAQSection.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import { Header } from "./components/Header/Header.jsx";
+// import { Header } from "./components/Header/Header.jsx";
 import MediaPartners from "./components/MediaPartners/MediaPartners.jsx";
 import SecurePlace from "./components/SecurePlace/SecurePlace.jsx";
 // import MingleSection from "./components/MingleSection/MingleSection.jsx";
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <VideoSection />
-      <Header />
+      {/* <Header /> */}
       <div id="when-section">
         <EventSection />
       </div>
