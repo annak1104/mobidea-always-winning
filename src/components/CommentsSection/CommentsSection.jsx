@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { useRef, useState } from "react";
 
+import arrowRight from "../../assets/arrow-5.png";
+import arrowLeft from "../../assets/arrow-7.png";
 import commentImg1 from "../../assets/1.png";
 import commentImg2 from "../../assets/2.png";
 import commentImg3 from "../../assets/3.png";
@@ -13,8 +15,6 @@ import commentImg4 from "../../assets/4.png";
 import commentImg5 from "../../assets/5.png";
 import commentImg6 from "../../assets/6.png";
 import commentImg7 from "../../assets/7.png";
-import arrowRight from "../../assets/arrow-5.png";
-import arrowLeft from "../../assets/arrow-7.png";
 import "../CommentsSection/big-slider.css";
 
 const testimonials = [
@@ -34,13 +34,9 @@ export default function CommentsSection() {
   return (
     <section className="w-full mx-auto bg-[url('./assets/bg-slider.webp')] px-4 py-10">
       <h2 className="text-center text-3xl md:text-5xl font-bold text-[#EB6431] mb-10">
-        Network Like a Pro.
-        <br /> Party Like a Rockstar.
+        Network Like a Pro.<br /> Party Like a Rockstar.
       </h2>
-      <p className="font-lato text-[#F7F5E5] w-[300px] lg:w-[780px] m-auto mb-10">
-        Get ready for an evening that transports you straight to the golden era
-        of New York nightlife, reimagined in a stunning Bangkok penthouse:
-      </p>
+      <p className="font-lato text-[#F7F5E5] w-[300px] lg:w-[780px] m-auto mb-10">Get ready for an evening that transports you straight to the golden era of New York nightlife, reimagined in a stunning Bangkok penthouse:</p>
 
       <Swiper
         spaceBetween={30}
@@ -56,7 +52,7 @@ export default function CommentsSection() {
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         breakpoints={{
           320: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
+          768: { slidesPerView: 1 },
           1024: { slidesPerView: 3 },
           1280: { slidesPerView: 5 },
         }}

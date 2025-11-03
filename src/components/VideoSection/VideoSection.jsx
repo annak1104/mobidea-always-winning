@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-import headerText from "../../assets/B-hero.png";
-import bg from "../../assets/bg-hero.webp";
-import bigText from "../../assets/big-text.png";
+import bg from "../../assets/bg-always-winning.webp";
+import headerBgMobile from "../../assets/bg-always-winning-mob.webp";
 import burgerMenu from "../../assets/burger-menu.svg";
 import closeIcon from "../../assets/close.svg";
 import logoSmallBlack from "../../assets/logo-small-black.svg";
@@ -14,18 +13,17 @@ import { TelegramIcon } from "../../icons/TelegramIcon.jsx";
 
 export const VideoSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const overlayOpacity = Math.max(0, 1 - scrollY / 200);
-  const heroOpacity = Math.max(0, 1 - scrollY / 200);
+  const backgroundImage = windowWidth >= 768 ? bg : headerBgMobile;
 
   const menuItems = [
     { label: "WHEN", href: "when-section" },
@@ -45,30 +43,13 @@ export const VideoSection = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source src="/APT-Video.mp4" type="video/mp4" />
-      </video>
-
       <div
-        className="absolute top-0 left-0 w-full h-full bg-black transition-opacity duration-700 z-10"
+        className="absolute top-0 left-0 w-full h-full bg-black duration-700 z-10"
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-          opacity: overlayOpacity,
+          backgroundPosition: "center",
         }}
-      ></div>
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-[#EB6431]/80 transition-opacity duration-700 z-10"
-        style={{ opacity: overlayOpacity }}
       ></div>
 
       <header className="fixed top-0 left-0 w-full z-[999999] flex justify-between items-center px-6 md:px-12 h-[100px] bg-[#000]/50">
@@ -162,22 +143,6 @@ export const VideoSection = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Hero */}
-      <div
-        className="relative z-20 pb-12 md:pb-40 flex flex-col items-center mg:justify-center justify-end h-full text-center px-6"
-        style={{ opacity: heroOpacity }}
-      >
-        <img
-          src={bigText}
-          alt="Big Text"
-          className="w-[80%] max-w-[780px] drop-shadow-lg"
-        />
-        <img src={headerText} alt="Header Text" className="w-[68px] mb-8" />
-        <p className="font-lato text-white text-lg md:text-xl font-semibold">
-          [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101 ]
-        </p>
       </div>
     </section>
   );

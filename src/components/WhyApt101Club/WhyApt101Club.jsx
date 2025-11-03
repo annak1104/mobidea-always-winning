@@ -1,13 +1,27 @@
+import { useRef, useState } from "react";
+
 import arrowDown from "../../assets/arrow-down.svg";
 import arrowUp from "../../assets/arrow-up.svg";
 import art from "../../assets/art.webp";
+import music2 from "../../assets/gatsby.webp";
 import circle from "../../assets/orange-circle.svg";
 import music1 from "../../assets/pic-2.webp";
-import music2 from "../../assets/gatsby.webp";
 import balcony from "../../assets/pic-5.webp";
 import disco from "../../assets/pic-33.webp";
 
 const WhyApt101Club = () => {
+    const videoRef = useRef(null);
+
+  // 🔹 Зберігаємо стан (вимкнено чи ні)
+  const [isMuted, setIsMuted] = useState(true);
+
+  // 🔹 Функція перемикання звуку
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  };
   return (
     <section className="relative bg-[#f7f3ea] text-[#1f1a16] py-20 px-4 md:px-10 lg:px-16 flex flex-col items-center">
       {/* <img
@@ -41,8 +55,12 @@ const WhyApt101Club = () => {
         <span className="text-[#EB6431] font-semibold">
           3rd floor of 233 Sukhumvit Rd
         </span>
-        , <a href="https://www.instagram.com/apt101club/" target="blank">APT 101</a> is a brand new, top-notch penthouse venue that pays homage to
-        the nostalgic lifestyle of fashion icons in 1970s New York City.
+        ,{" "}
+        <a href="https://www.instagram.com/apt101club/" target="blank">
+          APT 101
+        </a>{" "}
+        is a brand new, top-notch penthouse venue that pays homage to the
+        nostalgic lifestyle of fashion icons in 1970s New York City.
       </p>
       <p className="font-lato text-left max-w-3xl text-base md:text-lg text-[#3a3a36]">
         This isn&apos;t your typical Bangkok nightspot. The venue is a stunning
@@ -52,9 +70,22 @@ const WhyApt101Club = () => {
       </p>
 
       {/* Secondary heading */}
-      <h3 className="text-3xl md:text-4xl font-serif mt-16 mb-12 text-center">
+      <h3 className="text-3xl md:text-4xl font-serif mt-16 text-center">
         What Makes It Special:
       </h3>
+
+      <video
+        className="m-6 top-0 left-0 object-cover z-0"
+        autoPlay
+        muted={isMuted}
+        loop
+        playsInline
+        preload="auto"
+        onClick={handleVideoClick}
+        ref={videoRef}
+      >
+        <source src="/APT-Video.mp4" type="video/mp4" />
+      </video>
 
       {/* Content layout */}
       <div className="font-lato text-left w-full max-w-7xl">

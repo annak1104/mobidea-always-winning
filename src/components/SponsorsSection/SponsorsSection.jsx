@@ -21,7 +21,7 @@ const SponsorsSection = () => {
       <h2 className="text-4xl font-semibold md:text-7xl text-[#EB6431] mt-2 mb-[30px] md:mb-[100px]">
         Proudly Hosted By
       </h2>
-      <div className="flex flex-col items-center md:flex-row justify-center md:gap-10 gap-6 mt-8 px-4">
+      <div className="flex flex-col items-center lg:flex-row justify-center md:gap-10 gap-6 mt-8 px-4">
         {sponsors.map((sponsor, index) => (
           <div
             key={index}
