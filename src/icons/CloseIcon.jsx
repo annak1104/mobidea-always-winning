@@ -1,0 +1,7 @@
+export const CloseIcon = () => {
+  return (
+<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5768 8.54283H8.37524V15.0788H6.17124V8.54283H4.37842e-05V6.49083H6.17124V0.000432904H8.37524V6.49083H14.5768V8.54283Z" fill="#151515"/>
+</svg>
+  );
+};
