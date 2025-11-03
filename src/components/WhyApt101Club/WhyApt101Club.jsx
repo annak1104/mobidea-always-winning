@@ -283,6 +283,7 @@ const WhyApt101Club = () => {
       {/* Button */}
       <a
         href="https://www.instagram.com/apt101club/"
+        target="blank"
         className="mt-14 bg-[#EB6431] text-white px-10 py-4 rounded-full font-semibold shadow-md hover:bg-[#c95d32] transition"
       >
         EXPLORE APT 101
