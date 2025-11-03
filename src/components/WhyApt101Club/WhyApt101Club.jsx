@@ -41,7 +41,7 @@ const WhyApt101Club = () => {
         <span className="text-[#EB6431] font-semibold">
           3rd floor of 233 Sukhumvit Rd
         </span>
-        , <a href="https://www.instagram.com/apt101club/">APT 101</a> is a brand new, top-notch penthouse venue that pays homage to
+        , <a href="https://www.instagram.com/apt101club/" target="blank">APT 101</a> is a brand new, top-notch penthouse venue that pays homage to
         the nostalgic lifestyle of fashion icons in 1970s New York City.
       </p>
       <p className="font-lato text-left max-w-3xl text-base md:text-lg text-[#3a3a36]">
