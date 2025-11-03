@@ -1,11 +1,11 @@
 import arrowDown from "../../assets/arrow-down.svg";
 import arrowUp from "../../assets/arrow-up.svg";
+import art from "../../assets/art.webp";
 import circle from "../../assets/orange-circle.svg";
-import art from "../../assets/pic-1.webp";
 import music1 from "../../assets/pic-2.webp";
-import disco from "../../assets/pic-3.webp";
-import music2 from "../../assets/pic-4.webp";
+import music2 from "../../assets/gatsby.webp";
 import balcony from "../../assets/pic-5.webp";
+import disco from "../../assets/pic-33.webp";
 
 const WhyApt101Club = () => {
   return (
@@ -32,7 +32,7 @@ const WhyApt101Club = () => {
       />
       {/* Title */}
       <h2 className="text-[#EB6431] text-3xl md:text-6xl font-serif font-bold text-center mb-8">
-        Why APT 101 Club?
+        Why APT 101?
       </h2>
 
       {/* Subtitle */}
@@ -41,7 +41,7 @@ const WhyApt101Club = () => {
         <span className="text-[#EB6431] font-semibold">
           3rd floor of 233 Sukhumvit Rd
         </span>
-        , APT 101 is a brand new, top-notch penthouse venue that pays homage to
+        , <a href="https://www.instagram.com/apt101club/">APT 101</a> is a brand new, top-notch penthouse venue that pays homage to
         the nostalgic lifestyle of fashion icons in 1970s New York City.
       </p>
       <p className="font-lato text-left max-w-3xl text-base md:text-lg text-[#3a3a36]">
@@ -57,7 +57,7 @@ const WhyApt101Club = () => {
       </h3>
 
       {/* Content layout */}
-      <div className="font-lato w-full max-w-7xl">
+      <div className="font-lato text-left w-full max-w-7xl">
         {/* Desktop grid */}
         <div className="hidden lg:grid grid-cols-2 gap-16">
           {/* Left Column */}
@@ -132,12 +132,12 @@ const WhyApt101Club = () => {
             />
             <div>
               <h4 className="text-[#EB6431] font-semibold text-lg mb-2">
-                70s New York Vibes
+                Gatsby Glamour
               </h4>
               <p className="text-[#3a3a36]">
-                Feel like you&apos;re partying in a legendary NYC
-                designer&apos;s penthouse—because that&apos;s exactly the vibe
-                we&apos;re going for.
+                Step into the roaring twenties—where champagne flows, jazz and
+                house music fills the air, and every guest shines like old money
+                under the chandelier glow
               </p>
             </div>
 

@@ -176,7 +176,7 @@ export const VideoSection = () => {
         />
         <img src={headerText} alt="Header Text" className="w-[68px] mb-8" />
         <p className="font-lato text-white text-lg md:text-xl font-semibold">
-          [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101 Club ]
+          [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101 ]
         </p>
       </div>
     </section>

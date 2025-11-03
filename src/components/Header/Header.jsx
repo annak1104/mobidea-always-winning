@@ -124,7 +124,7 @@ export const Header = () => {
           />
 
           <p className="font-lato px-2.5 font-semibold text-xl mt-12 md:mt-24 text-white text-center">
-            [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101 Club ]
+            [ December 3rd, 2025 • 9:00 PM - 2:00 AM • APT 101  ]
           </p>
         </div>
       </div>
