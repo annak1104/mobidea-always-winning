@@ -28,7 +28,7 @@ const PastEventsGallery = () => {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-[280px] sm:h-[320px] lg:h-[288px] object-cover rounded-[2rem]"
+                  className="w-full h-[280px] sm:h-[320px] lg:h-[288px] object-cover rounded-[2rem] scale-105"
                 />
               </div>
             ))}

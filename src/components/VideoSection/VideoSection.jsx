@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-import bg from "../../assets/bg-always-winning.webp";
 import headerBgMobile from "../../assets/bg-always-winning-mob.webp";
+import bg from "../../assets/bg-always-winning.webp";
 import burgerMenu from "../../assets/burger-menu.svg";
 import closeIcon from "../../assets/close.svg";
 import logoSmallBlack from "../../assets/logo-small-black.svg";

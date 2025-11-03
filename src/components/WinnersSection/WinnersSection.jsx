@@ -15,9 +15,11 @@ const WinnersSection = () => {
       </div>
 
       {/* Button */}
-      <button className="bg-[#EB6431] text-white px-6 rounded-full mt-[60px] text-lg uppercase font-semibold hover:text-black w-[343px] h-[62px] md:w-[504px] lg:h-[76px] max-w-full">
-        Secure Your Spot Now
-      </button>
+      <a href="https://luma.com/zy0pfxw6" target="blank">
+        <button className="bg-[#EB6431] text-white px-6 rounded-full mt-[60px] text-lg uppercase font-semibold hover:text-black w-[343px] h-[62px] md:w-[504px] lg:h-[76px] max-w-full">
+          Secure Your Spot Now
+        </button>
+      </a>
     </section>
   );
 };

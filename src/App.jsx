@@ -54,6 +54,7 @@ function App() {
       </div>
       <SecureSpot />
       <MediaPartners />
+      <SponsorsSection />
       <div id="contact-section">
         <Footer />
       </div>

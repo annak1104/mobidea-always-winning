@@ -106,9 +106,11 @@ const NightBlueprint = () => {
 
               {/* CTA */}
               <div className="mt-8">
-                <button className="bg-[#EB6431] flex items-center text-[15px] h-16 m-auto lg:m-0 w-[280px] lg:w-[320px] lg:justify-center text-white rounded-full px-8 py-4 uppercase text-lg font-semibold tracking-wider shadow-lg">
-                  Join the winners circle
-                </button>
+                <a href="https://luma.com/zy0pfxw6" target="blank">
+                  <button className="bg-[#EB6431] flex items-center text-[15px] h-16 m-auto lg:m-0 w-[280px] lg:w-[320px] lg:justify-center text-white rounded-full px-8 py-4 uppercase text-lg font-semibold tracking-wider shadow-lg">
+                    Join the winners circle
+                  </button>
+                </a>
               </div>
             </div>
           </div>

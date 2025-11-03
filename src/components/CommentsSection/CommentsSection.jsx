@@ -8,13 +8,13 @@ import { useRef, useState } from "react";
 
 import arrowRight from "../../assets/arrow-5.png";
 import arrowLeft from "../../assets/arrow-7.png";
-import commentImg1 from "../../assets/1.png";
-import commentImg2 from "../../assets/2.png";
-import commentImg3 from "../../assets/3.png";
+import commentImg1 from "../../assets/1.webp";
+import commentImg2 from "../../assets/2.webp";
+import commentImg3 from "../../assets/3.webp";
 import commentImg4 from "../../assets/4.png";
 import commentImg5 from "../../assets/5.png";
 import commentImg6 from "../../assets/6.png";
-import commentImg7 from "../../assets/7.png";
+import commentImg7 from "../../assets/7.webp";
 import "../CommentsSection/big-slider.css";
 
 const testimonials = [

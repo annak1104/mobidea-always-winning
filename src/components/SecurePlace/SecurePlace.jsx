@@ -31,7 +31,7 @@ const SecurePlace = () => {
 
           {/* RIGHT: Heading + text */}
           <div className="relative order-1 md:order-2 md:w-1/2 flex flex-col justify-center">
-            <h2 className="absolute -top-[16%] text-[2.2rem] md:text-[64px] w-[630px] text-left font-semibold leading-tight md:leading-[0.95] text-[#EB6431] font-playfair mb-12">
+            <h2 className="absolute z-1 -top-[16%] text-[2.2rem] md:text-[64px] w-[630px] text-left font-semibold leading-tight md:leading-[0.95] text-[#EB6431] font-playfair mb-12">
               Secure Your Place
               <br />
               Among the Winners!
@@ -63,8 +63,9 @@ const SecurePlace = () => {
                   </p>
                 </div>
               </div>
-              <button
-                className="
+              <a href="https://luma.com/zy0pfxw6" target="blank">
+                <button
+                  className="
     absolute
     font-lato 
     bg-[#EB6431] 
@@ -84,9 +85,10 @@ const SecurePlace = () => {
     md:w-[220px] md:h-[64px]
     sm:w-[180px] sm:h-[54px] sm:-bottom-12 sm:right-20
   "
-              >
-                CLAIM YOUR VIP SPOT
-              </button>
+                >
+                  CLAIM YOUR VIP SPOT
+                </button>
+              </a>
             </div>
           </div>
         </div>

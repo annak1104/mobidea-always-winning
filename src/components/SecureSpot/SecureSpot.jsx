@@ -77,13 +77,14 @@ const EventHero = () => {
             The question is: Can you afford to miss it?
           </p>
         </div>
-
-        <button
-          className="mt-10 bg-[#EB6431] text-white rounded-full px-10 py-4 uppercase font-semibold tracking-wider shadow-2xl hover:brightness-95"
-          style={{ minWidth: 260 }}
-        >
-          Secure your spot now
-        </button>
+        <a href="https://luma.com/zy0pfxw6" target="blank">
+          <button
+            className="mt-10 bg-[#EB6431] text-white rounded-full px-10 py-4 uppercase font-semibold tracking-wider shadow-2xl hover:brightness-95"
+            style={{ minWidth: 260 }}
+          >
+            Secure your spot now
+          </button>
+        </a>
       </div>
 
       {/* subtle bottom fade so background doesn't cut off abruptly */}
